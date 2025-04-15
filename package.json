@@ -8,9 +8,11 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.6.1",
+    "astro": "^5.6.1"
+  },
+  "devDependencies": {
     "autoprefixer": "^10.4.21",
     "postcss": "^8.5.3",
-    "tailwindcss": "^3.3.0"
+    "tailwindcss": "^4.1.3"
   }
 }

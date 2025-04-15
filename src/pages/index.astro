@@ -1,9 +1,57 @@
 ---
 import "../styles.css";
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Navbar from "../components/Navbar.astro";
+import Footer from "../components/Footer.astro";
 ---
 
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Mi Portafolio</title>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <Navbar />
+
+    <main class="max-w-5xl mx-auto px-6 py-16">
+      <section class="text-center mb-16">
+        <h1 class="text-5xl font-extrabold text-blue-600 mb-4">¡Hola! Soy [Tu Nombre]</h1>
+        <p class="text-xl text-gray-700">
+          Desarrollador web y estudiante de Ingeniería en Sistemas. Apasionado por la tecnología, el diseño y los datos.
+        </p>
+      </section>
+
+      <section class="mb-16">
+        <h2 class="text-3xl font-semibold text-gray-800 mb-4">Sobre mí</h2>
+        <p class="text-gray-700 text-lg leading-relaxed">
+          Soy un desarrollador web de 22 años con más de 3 años de experiencia profesional en desarrollo frontend y backend.
+          Actualmente estudio Ingeniería en Sistemas y estoy profundizando en áreas como ciencia de datos y analítica.
+          Me apasiona crear soluciones prácticas, eficientes y visualmente atractivas.
+        </p>
+      </section>
+
+      <section>
+        <h2 class="text-3xl font-semibold text-gray-800 mb-6">Proyectos destacados</h2>
+
+        <div class="grid md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-2xl shadow-lg p-6 transition hover:scale-[1.02]">
+            <h3 class="text-xl font-bold mb-2 text-blue-700">Sistema de Gestión Escolar</h3>
+            <p class="text-gray-600 mb-3">
+              App web para administración de estudiantes, notas y asistencia.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">Ver más</a>
+          </div>
+
+          <div class="bg-white rounded-2xl shadow-lg p-6 transition hover:scale-[1.02]">
+            <h3 class="text-xl font-bold mb-2 text-blue-700">Dashboard de Ventas</h3>
+            <p class="text-gray-600 mb-3">
+              Dashboard interactivo con gráficos usando Chart.js y backend en Node.js.
+            </p>
+            <a href="#" class="text-blue-500 hover:underline">Ver más</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <Footer />
+  </body>
+</html>
